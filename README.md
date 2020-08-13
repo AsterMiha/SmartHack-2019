@@ -4,6 +4,6 @@ Web application that predicts stock price changes by analysing the news regardin
 Built during the 24h hackathon SmartHack in 2019
 
 Team
-- Adela Vais @adelavais
-- Mihaela Chirea @AsterMiha
-- Raluca Antonescu @RalucaAntonescu
+- Adela Vais [@adelavais](https://github.com/adelavais)
+- Mihaela Chirea [@AsterMiha](https://github.com/AsterMiha)
+- Raluca Antonescu [@RalucaAntonescu](https://github.com/RalucaAntonescu)
