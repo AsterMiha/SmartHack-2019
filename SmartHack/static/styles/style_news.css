@@ -1,0 +1,37 @@
+body{
+	height:100%;
+	margin: 0;
+	padding: 0;
+	background: #F0FFFF;
+}
+
+.copyright{ 
+    overflow: hidden; 
+    padding: 3em 0em; 
+    border-top: 20px solid rgba(255, 255, 255, 0.08); 
+    text-align: center; 
+	background: #e6e6ff;
+}
+
+.copyright p{ 
+	margin-top: -25px;
+    letter-spacing: 1px;
+	line-height: 1px;
+    font-size: 0.90em; 
+    color: rgba(0, 0, 0, 0.6); 
+} 
+.footer{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 10%;
+}
+
+.chenar{
+	width: 1400px;
+	padding: 15px;
+	border: 5px solid gray;
+	margin-top: 40px;
+	margin-left: 40px;
+}

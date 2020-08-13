@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style_sign.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="menu">
+			<ul>
+			  <li><a href="{{ url_for('home') }}"> Home</a></li>
+			  <li><a href="{{ url_for('news') }}">News</a></li>
+			  <li><a href="{{ url_for('entertainment') }}">Entertainment</a></li>
+			  <li><a href="{{ url_for('account') }}"  class="active">Sign in</a></li>
+			  <li><a href="{{ url_for('about') }}">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="signin-form">
+		  <form class="" action="{{ url_for('home') }}" method="post">
+			<h1>Sign In</h1>
+			<input type="email" placeholder="Email" class="txtb">
+			<input type="password" placeholder="Password" class="txtb">
+			<input type="submit" value="Sign In" class="signin-btn">
+			<a href="main_page.html">Don't have an account?</a>
+		  </form>
+		</div>
+	</body>
+</html>

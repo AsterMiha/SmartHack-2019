@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style_news.css') }}">
+	</head>
+	
+	<body>
+		<div class="menu">
+			<ul>
+			  <li><a href="{{ url_for('home') }}"> Home</a></li>
+			  <li><a href="{{ url_for('news') }}" class="active">News</a></li>
+			  <li><a href="{{ url_for('entertainment') }}">Entertainment</a></li>
+			  <li><a href="{{ url_for('account') }}">Sign in</a></li>
+			  <li><a href="{{ url_for('about') }}">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company0 }} </p>
+			<a href="{{ url0 }}">{{ title0 }}</a>
+			<p>{{ category0 }}</p>
+			<p> Yesterday's value: {{ yesterday0 }}</p>
+			<p> Today's prediction: {{ prediction0 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company1 }} </p>
+			<a href="{{ url1 }}">{{ title1 }}</a>
+			<p>{{ category1 }}</p>
+			<p> Yesterday's value: {{ yesterday1 }}</p>
+			<p> Today's prediction: {{ prediction1 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company2 }} </p>
+			<a href="{{ url2 }}">{{ title2 }}</a>
+			<p>{{ category2 }}</p>
+			<p> Yesterday's value: {{ yesterday2 }}</p>
+			<p> Today's prediction: {{ prediction2 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company3 }} </p>
+			<a href="{{ url3 }}">{{ title3 }}</a>
+			<p>{{ category3 }}</p>
+			<p> Yesterday's value: {{ yesterday3 }}</p>
+			<p> Today's prediction: {{ prediction3 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company4 }} </p>
+			<a href="{{ url4 }}">{{ title4 }}</a>
+			<p>{{ category4 }}</p>
+			<p> Yesterday's value: {{ yesterday4 }}</p>
+			<p> Today's prediction: {{ prediction4 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company5 }} </p>
+			<a href="{{ url5 }}">{{ title5 }}</a>
+			<p>{{ category5 }}</p>
+			<p> Yesterday's value: {{ yesterday5 }}</p>
+			<p> Today's prediction: {{ prediction5 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company6 }} </p>
+			<a href="{{ url6 }}">{{ title6 }}</a>
+			<p>{{ category6 }}</p>
+			<p> Yesterday's value: {{ yesterday6 }}</p>
+			<p> Today's prediction: {{ prediction6 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company7 }} </p>
+			<a href="{{ url7 }}">{{ title7 }}</a>
+			<p>{{ category7 }}</p>
+			<p> Yesterday's value: {{ yesterday7 }}</p>
+			<p> Today's prediction: {{ prediction7 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company8 }} </p>
+			<a href="{{ url8 }}">{{ title8 }}</a>
+			<p>{{ category8 }}</p>
+			<p> Yesterday's value: {{ yesterday8 }}</p>
+			<p> Today's prediction: {{ prediction8 }}</p>
+		</div>
+		
+		<div class="chenar">
+			<p> {{ company9 }} </p>
+			<a href="{{ url9 }}">{{ title9 }}</a>
+			<p>{{ category9 }}</p>
+			<p> Yesterday's value: {{ yesterday9 }}</p>
+			<p> Today's prediction: {{ prediction9 }}</p>
+			<p> -------------------------------- </p>
+		</div>
+		
+		<footer class="footer">
+			<div class="copyright"> 
+				<p>©  All rights reserved | 3 Threads</p>  
+			</div> 
+		</footer>
+
+</body>
+</html>

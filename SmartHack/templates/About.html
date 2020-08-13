@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.menu ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  background-color: #333;
+			}
+
+			.menu ul li {
+			  float: left;
+			}
+
+			.menu ul li a {
+			  display: inline-block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			.menu ul li a:hover {
+			  background-color: #111;
+			}
+
+			.active {
+			  background-color: red;
+			}
+			body{
+				height:100%;
+				margin: 0;
+				padding: 0;
+				background: #F0FFFF;
+			}
+
+			.title{
+				
+			}
+
+			.title h1{
+				text-align: center;
+				font-size: 43px;
+				width: 640px;
+			}
+
+			.banner1 {
+				width: 80%;
+				height: 70%;
+				top: 25%;
+				left: 50px;
+				position: absolute;
+			}
+
+			.text p{
+				font-size: 15px;
+				width: 650px;
+				margin: 30px 0 30px 40px;
+				line-height: 25px;
+			}
+
+			.video{
+				
+			}
+
+			.app-pictures1 {
+				width: 50%;
+				float: right;
+			}
+
+			.app-pictures1 img{
+				width: 100%;
+				margin-top: -100%;
+				padding-left: 50px;
+			}
+
+			.copyright{ 
+				overflow: hidden; 
+				padding: 3em 0em; 
+				border-top: 20px solid rgba(255, 255, 255, 0.08); 
+				text-align: center; 
+				background: #e6e6ff;
+			}
+
+			.copyright p{ 
+				margin-top: -25px;
+				letter-spacing: 1px;
+				line-height: 1px;
+				font-size: 0.90em; 
+				color: rgba(0, 0, 0, 0.6); 
+			} 
+			.footer{
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				height: 10%;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+	
+		<div class="menu">
+			<ul>
+			  <li><a href="{{ url_for('home') }}"> Home</a></li>
+			  <li><a href="{{ url_for('news') }}">News</a></li>
+			  <li><a href="{{ url_for('entertainment') }}">Entertainment</a></li>
+			  <li><a href="{{ url_for('account') }}">Sign in</a></li>
+			  <li><a href="{{ url_for('about') }}" class="active">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="title">
+			<h1>Process of implementation</h1>
+		</div>
+		
+		<div class="banner1">
+			<div class="text">
+				<b>Our project uses the following technologies: Python, Firebase, HTML, CSS.<br>
+				The web server receives the user request and passes it to the Flask application.<br>
+				The Flask application uses News API to get the news. It classifies them as <br>
+				negative, neutral or positive and sends all of them to the Firebase database<br>
+				and shows only the 10 most recent back to the user application.</b>
+			</div>
+			
+			<div class="video">
+				<br><br>
+				<button onclick="playPause()">Play/Pause</button> 
+				<button onclick="fullScreen()">Fullscreen</button>
+				<button onclick="makeNormal()">Normal</button>
+				<br>
+				
+				<video id="video1" width="420">
+					<source src="static/videos/video1.mp4" type="video/mp4">
+					<source src="static/videos/video1.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+			</div>
+			
+			<script> 
+				var myVideo = document.getElementById("video1"); 
+
+				function playPause() { 
+				  if (myVideo.paused) 
+					myVideo.play(); 
+				  else 
+					myVideo.pause(); 
+				} 
+
+				function fullScreen() { 
+					myVideo.width = 1200; 
+				} 
+
+				function makeNormal() { 
+					myVideo.width = 420; 
+				}		
+			</script>
+			
+			<div class="app-pictures1">
+				<img src="static/images/diagr.jpg">
+			</div>
+		</div>
+		
+		<footer class="footer">
+			<div class="copyright"> 
+				<p>©  All rights reserved | 3 Threads</p>  
+			</div> 
+		</footer>
+		
+	</body>
+</html>
+

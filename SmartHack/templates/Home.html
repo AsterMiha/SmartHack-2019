@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style_home.css') }}">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="menu">
+			<ul>
+			  <li><a href="{{ url_for('home') }}" class="active"> Home</a></li>
+			  <li><a href="{{ url_for('news') }}">News</a></li>
+			  <li><a href="{{ url_for('entertainment') }}">Entertainment</a></li>
+			  <li><a href="{{ url_for('account') }}">Sign in</a></li>
+			  <li><a href="{{ url_for('about') }}">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="banner">
+			<div class="app-text">
+				<h1>Technology opens our mind</h1>
+				<p>We are Adela, Miha and Raluca, and we form the 3 Threads team.<br>
+				We are here to have fun, to learn interesting technologies and to meet<br>
+				new people.<br>
+				Our project focusses on retrieving new updates from the News API,<br>
+				classifying the data in relevant terms for stock analyses. <br>
+				We present the latest news from 10 FTSE 100 companies and we predict<br>
+				the stock value by the end of the day based on the impact the news have<br>
+				on a certain company.</p>
+			</div>
+			<div class="app-pictures">
+				<img src="/static/images/2.jpg">
+			</div>
+		</div>
+		
+		<footer class="footer">
+			<h1>Socialize</h1>
+				<div class="media">
+					<ul>
+					 <li><i class="fa fa-facebook"></i></li>
+					 <li><i class="fa fa-instagram"></i></li>
+					 <li><i class="fa fa-github"></i></li>
+					 <li><i class="fa fa-twitter-square"></i></li>
+					</ul>
+				</div>
+		</footer>
+	</body>
+</html>

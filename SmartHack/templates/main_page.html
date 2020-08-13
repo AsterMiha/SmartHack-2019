@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style_cont.css">
+		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="menu">
+			<ul>
+			  <li><a href="{{ url_for('home') }}"> Home</a></li>
+			  <li><a href="{{ url_for('news') }}">News</a></li>
+			  <li><a href="{{ url_for('entertainment') }}">Entertainment</a></li>
+			  <li><a href="{{ url_for('account') }}" class="active">Sign in</a></li>
+			  <li><a href="{{ url_for('about') }}">About</a></li>
+			</ul>
+		</div>
+		
+		<div class="signup-form">
+		  <form class="" method="post">
+			<h1>Sign Up</h1>
+			<input type="text" placeholder="Full Name" class="txtb">
+			<input type="email" placeholder="Email" class="txtb">
+			<input type="password" placeholder="Password" class="txtb">
+			<input type="submit" value="Create Account" class="signup-btn">
+		  </form>
+		</div>
+	</body>
+	
+</html>

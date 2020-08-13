@@ -1,0 +1,24 @@
+<p id="news1"> titlu </p>
+		<p id="news1"> data </p>
+		<p id="news1"> calificativ </p>
+		<p id="news1"> text </p>
+
+		<p id="news2"> titlu </p>
+		<p id="news2"> data </p>
+		<p id="news2"> calificativ </p>
+		<p id="news2"> text </p>
+
+		<p id="news3"> titlu </p>
+		<p id="news3"> data </p>
+		<p id="news3"> calificativ </p>
+		<p id="news3"> text </p>
+
+		<p id="news4"> titlu </p>
+		<p id="news4"> data </p>
+		<p id="news4"> calificativ </p>
+		<p id="news4"> text </p>
+
+		<p id="news5"> titlu </p>
+		<p id="news5"> data </p>
+		<p id="news5"> calificativ </p>
+		<p id="news5"> text </p>
